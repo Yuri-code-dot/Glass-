@@ -9,7 +9,7 @@
     </queries>
     <application
         android:theme="@style/Theme.Glass"
-        android:label="Glass"
+        android:label="Tensoramax"
         android:icon="@drawable/ic_glass"
         android:roundIcon="@drawable/ic_glass"
         android:resizeableActivity="true"
