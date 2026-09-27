@@ -3,6 +3,8 @@
     <application
         android:theme="@style/Theme.Glass"
         android:label="Glass"
+        android:icon="@drawable/ic_glass"
+        android:roundIcon="@drawable/ic_glass"
         android:resizeableActivity="true"
         android:allowBackup="true">
 
