@@ -18,3 +18,6 @@ A mobile-first Liquid Glass launcher experiment for Android.
 - Lightweight animations
 
 The project targets Android 8.0+ and is designed to be built from GitHub Actions, so a PC is not required.
+
+
+Builds are produced by GitHub Actions as the `Glass-release-apk` artifact.
