@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
-private enum class GlassTheme(val name: String, val bg: List<Color>) {
+private enum class GlassTheme(val title: String, val bg: List<Color>) {
     Clear("Clear", listOf(Color(0xFF101216), Color(0xFF090A0D))),
     Aurora("Aurora", listOf(Color(0xFF102027), Color(0xFF080B10))),
     Violet("Violet", listOf(Color(0xFF21182A), Color(0xFF09090D)))
@@ -167,7 +167,7 @@ private fun requestHome(context: Context) {
 }
 
 @Composable
-private fun Action(title: String, icon: String, click: () -> Unit) {
+private fun RowScope.Action(title: String, icon: String, click: () -> Unit) {
     Box(
         Modifier.weight(1f).height(64.dp).clip(RoundedCornerShape(20.dp))
             .background(Color.White.copy(alpha = .06f))
@@ -324,7 +324,7 @@ private fun SettingsPanel(
                                 .background(Brush.linearGradient(item.bg))
                         )
                         Spacer(Modifier.size(12.dp))
-                        Text(item.name, color = Color.White, fontSize = 14.sp)
+                        Text(item.title, color = Color.White, fontSize = 14.sp)
                         if (active) {
                             Spacer(Modifier.weight(1f))
                             Text("✓", color = Color.White)
